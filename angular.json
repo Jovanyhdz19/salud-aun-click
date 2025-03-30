@@ -15,7 +15,7 @@
           "options": {
             "outputPath": "dist/salud-aun-clik",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
@@ -38,7 +38,7 @@
           },
           "configurations": {
             "production": {
-              "outputHashing": "all"
+              "outputHashing": "all",
               "budgets": [
                 {
                   "type": "initial",
@@ -50,8 +50,7 @@
                   "maximumWarning": "2kB",
                   "maximumError": "4kB"
                 }
-              ],
-              "outputHashing": "all"
+              ]
             },
             "development": {
               "optimization": false,
@@ -66,8 +65,8 @@
           "configurations": {
             "production": {
               "outputPath": "dist/salud-a-un-click/server",
-            "main": "src/main.server.ts",
-            "tsConfig": "tsconfig.server.json"
+              "main": "src/main.server.ts",
+              "tsConfig": "tsconfig.server.json",
               "buildTarget": "SaludAunClik:build:production"
             },
             "development": {
@@ -106,3 +105,4 @@
     "analytics": "19865eac-e178-4f4a-a77f-233627bfb981"
   }
 }
+
